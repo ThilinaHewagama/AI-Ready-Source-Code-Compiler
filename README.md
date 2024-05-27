@@ -8,8 +8,16 @@ This repository hosts a bash script designed to compile source code files from a
 The script does the following:
 - Identifies the directory where it is located.
 - Searches for specific file types (e.g., `.swift`, `.ts`, `.tsx`) within this directory.
-- Ignores specified folders (e.g., `node_modules`, `ios`, `android`, `__tests__`).
+- Ignores specified folders (e.g., `node_modules`, `ios`, `android`, `__tests__`, `Pods`).
 - Compiles the contents of the identified files into a single output file named `full_source_code.txt`.
+
+## **Highlight**
+
+> **✨ The main goal of this script is to compile all source code into a single file so that it can be uploaded to an AI, like ChatGPT, for questions, suggestions, and code reviews. ✨**
+
+### **Steps to Use the Output File with ChatGPT**
+1. **Run the Script**: Execute the script to generate the `full_source_code.txt` file.
+2. **Upload to ChatGPT**: Use the generated file to upload to ChatGPT or any other AI service for detailed questions, suggestions, and code reviews.
 
 ## Getting Started
 
@@ -59,12 +67,13 @@ The script ignores the following folders by default:
 - `ios` (generated files in React Native projects)
 - `android` (generated files in React Native projects)
 - `__tests__` (test files)
+- `Pods` (generated files in iOS projects)
 
 You can modify the `ignored_folders` array in the script to ignore other directories as needed.
 
 ## Tips for iOS Developers
 
-- **Ignored Folders**: Ensure that folders like `ios` are ignored to avoid including generated or platform-specific files.
+- **Ignored Folders**: Ensure that folders like `ios` and `Pods` are ignored to avoid including generated or platform-specific files.
 - **File Types**: Include `.swift` files for Swift source code.
 
 ## Tips for React Native Developers
