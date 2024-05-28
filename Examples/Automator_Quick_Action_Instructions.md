@@ -72,5 +72,3 @@ To create an Automator Quick Action that executes your bash script inside the se
    - Save the Quick Action with a meaningful name, such as "AI Ready - iOS".
 
 Now, you can use this Quick Action from the Finder. Right-click any folder, go to the "Quick Actions" menu, and select the name of your Quick Action. It will execute the script inside the selected folder and create the `full_source_code.txt` file with the concatenated source files.
-
-Let me know if you need any more assistance!
